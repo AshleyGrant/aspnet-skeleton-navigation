@@ -1,4 +1,4 @@
-# aspnet-aurelia-skeleton-navigation
+# aspnet-skeleton-navigation
 
 This skeleton is an example of how to utilize [Aurelia](http://www.aurelia.io/) with Visual Studio 2013 and Typescript. 
 It sets up a standard navigation-style app using the Typescript compiler. Gulp is used to copy all html, ts, js, and map files to the dist\ directory. Karma/Jasmine testing is also configured. 
