@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="EnsureJspm">
+        <PropertyGroup>
+            <JspmNotFoundError>Jspm module not found. Please install Jspm in the node module path '$(NodeModulePath)'.</JspmNotFoundError>
+            <JspmExecutable>$(NodeModulePath)\jspm.cmd</JspmExecutable>
+            <JspmExitCode>0</JspmExitCode>
+        </PropertyGroup>
+        <Message Text="Ensuring Jspm is installed" Importance="low" />
+
+        <Exec Command="$(WINDIR)\system32\where.exe jspm"
+            ContinueOnError="true"
+            IgnoreExitCode="true"
+            ConsoleToMsBuild="true"
+            Condition=" !Exists('$(JspmExecutable)') ">
+            <Output TaskParameter="ExitCode" PropertyName="JspmExitCode"/>
+            <Output TaskParameter="ConsoleOutput" PropertyName="JspmExecutable" />
+        </Exec>
+        <Error Condition=" '$(JspmExitCode)' != '0' " Text="'$(JspmNotFoundError)'" />
+
+        <PropertyGroup>
+            <RunJspmCmd>$(EnsureNodeInPathCmd) "$(JspmExecutable)" $(JspmCommand)</RunJspmCmd>
+        </PropertyGroup>
+
+        <Message Text="Jspm found: '$(JspmExecutable)'" />
+    </Target>
+
+    <Target Name="RunJspm" 
+        DependsOnTargets="EnsureNodeModules;EnsureJspm"
+        BeforeTargets="BeforeBuild"
+        Condition=" Exists('$(JspmFile)') ">
+        <Exec Command="$(RunJspmCmd)"
+            CustomErrorRegularExpression="E[A-Z]+"/>
+    </Target>
+<!-- vim: set ft=xml sw=4 :-->
+</Project>
