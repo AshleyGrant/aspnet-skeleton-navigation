@@ -1,11 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
-
   <Import Project="..\build\MSBuild.Node.props" />
   <Import Project="..\build\MSBuild.Npm.props" />
   <Import Project="..\build\MSBuild.Jspm.props" />
-
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -71,7 +69,6 @@
     <Content Include="doc\CHANGELOG.md" />
     <Content Include="LICENSE" />
     <Content Include="package.json" />
-    <Content Include="README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -146,9 +143,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-
   <Import Project="..\build\MSBuild.Node.targets" />
   <Import Project="..\build\MSBuild.Npm.targets" />
   <Import Project="..\build\MSBuild.Jspm.targets" />
-  
 </Project>

@@ -11,9 +11,11 @@ Integration of npm and jspm with the Visual Studio is provided but is disabled b
 
 2. Install the [Typescript 1.3](https://visualstudiogallery.msdn.microsoft.com/955e0262-0858-40c9-ab5a-1acc680e9bfd) Visual Studio Extension.
 
-2. Ensure that [NodeJS](http://nodejs.org/) is installed. This provides the platform on which the build tooling runs.
+3. Make sure that Git is installed and the path to the Git executable is in the $PATH system variable. Either [Git for Windows](http://git-scm.com/download/win) or [GitHub for Windows](https://windows.github.com/) should work for this.
 
-3. Ensure that [Gulp](http://gulpjs.com/) is installed. If you need to install it, use the following command:
+4. Ensure that [NodeJS](http://nodejs.org/) is installed. This provides the platform on which the build tooling runs.
+
+5. Ensure that [Gulp](http://gulpjs.com/) is installed. If you need to install it, use the following command:
 
   ```shell
   npm install -g gulp
