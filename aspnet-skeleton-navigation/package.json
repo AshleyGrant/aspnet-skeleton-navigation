@@ -1,22 +1,23 @@
 {
-  "name": "aurelia-skeleton-navigation",
+  "name": "asp-skeleton-navigation",
   "version": "0.5.0",
-  "description": "A starter kit for building a standard navigation-style app with Aurelia.",
+  "description": "A starter kit for building a standard navigation-style app with Aurelia and Visual Studio.",
   "keywords": [
     "aurelia",
     "navigation",
-    "skeleton"
+    "skeleton",
+    "aspnet"
   ],
   "homepage": "http://aurelia.io",
   "bugs": {
     "url": "https://github.com/aurelia/skeleton-navigation/issues"
   },
   "license": "MIT",
-  "author": "Rob Eisenberg <rob@bluespire.com> (http://robeisenberg.com/)",
+  "author": "Ashley Grant <ashley@ashleygrant.com> ",
   "main": "dist/commonjs/index.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/aurelia/skeleton-navigation"
+    "url": "https://github.com/AshleyGrant/aspnet-skeleton-navigation"
   },
   "devDependencies": {
     "browser-sync": "^1.8.1",
