@@ -5,3 +5,5 @@ bin
 obj
 .idea
 .DS_STORE
+src/*.map
+/src/*.js

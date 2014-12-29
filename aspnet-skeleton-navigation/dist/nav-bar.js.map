@@ -1,1 +1,0 @@
-{"version":3,"file":"nav-bar.js","sourceRoot":"","sources":["nav-bar.ts"],"names":["NavBar","NavBar.constructor","NavBar.annotations"],"mappings":"gFAAO,iBAAiB;IAExB,IAAa,MAAM;QAAnBA,SAAaA,MAAMA;QAInBC,CAACA;QAHUD,kBAAWA,GAAlBA;YACIE,MAAMA,CAACA,CAACA,IAAIA,iBAAiBA,CAACA,QAAQA,CAACA,QAAQA,CAACA,CAACA,CAACA;QACtDA,CAACA;QACLF,aAACA;IAADA,CAACA,AAJD,IAIC;IAJY,cAAM,GAAN,MAIZ,CAAA"}

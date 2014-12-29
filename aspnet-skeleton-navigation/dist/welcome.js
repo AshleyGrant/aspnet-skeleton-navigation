@@ -19,4 +19,4 @@ define(["require", "exports"], function (require, exports) {
     })();
     exports.Welcome = Welcome;
 });
-//# sourceMappingURL=welcome.js.map
+//# sourceMappingURL=../src/welcome.js.map

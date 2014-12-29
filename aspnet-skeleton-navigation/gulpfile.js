@@ -14,6 +14,7 @@ var bump = require('gulp-bump');
 var browserSync = require('browser-sync');
 var changed = require('gulp-changed');
 var plumber = require('gulp-plumber');
+var replace = require('gulp-replace');
 
 var path = {
     source: 'src/**/*.js',
@@ -57,10 +58,11 @@ gulp.task('build-amd', function () {
       .pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task('copy-typescriptoutput', function () {
+gulp.task('copy-typescript-output', function () {
     return gulp.src(path.source)
       .pipe(plumber())
       .pipe(changed(path.output, { extension: '.js' }))
+      .pipe(replace('sourceMappingURL=', 'sourceMappingURL=../src/'))
       .pipe(gulp.dest(path.output))
       .pipe(browserSync.reload({ stream: true }));
 });
@@ -68,20 +70,6 @@ gulp.task('copy-typescriptoutput', function () {
 gulp.task('build-html', function () {
     return gulp.src(path.html)
       .pipe(changed(path.output, { extension: '.html' }))
-      .pipe(gulp.dest(path.output))
-      .pipe(browserSync.reload({ stream: true }));
-});
-
-gulp.task('copy-typescript', function () {
-    return gulp.src(path.typescript)
-      .pipe(changed(path.output, { extension: '.ts' }))
-      .pipe(gulp.dest(path.output))
-      .pipe(browserSync.reload({ stream: true }));
-});
-
-gulp.task('copy-sourceMaps', function () {
-    return gulp.src(path.sourceMaps)
-      .pipe(changed(path.output, { extension: '.map' }))
       .pipe(gulp.dest(path.output))
       .pipe(browserSync.reload({ stream: true }));
 });
@@ -119,7 +107,7 @@ gulp.task('changelog', function (callback) {
 gulp.task('build', function (callback) {
     return runSequence(
       'clean',
-      ['copy-typescriptoutput', 'build-html', 'copy-typescript', 'copy-sourceMaps'],
+      ['copy-typescript-output', 'build-html'],
       callback
     );
 });
