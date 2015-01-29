@@ -4,9 +4,9 @@ export class Welcome {
     public lastName: string;
 
     constructor() {
-        this.heading = 'Welcome to the Aurelia Navigation App (VS/TS)!';
-        this.firstName = 'John';
-        this.lastName = 'Doe';
+        this.heading = "Welcome to the Aurelia Navigation App (VS/TS)!";
+        this.firstName = "John";
+        this.lastName = "Doe";
     }
 
     get fullName() {

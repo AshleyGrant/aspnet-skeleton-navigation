@@ -1,10 +1,8 @@
-define(["require", "exports", 'aurelia-framework'], function (require, exports, _aureliaFramework) {
+define(["require", "exports", "aurelia-framework"], function (require, exports, auf) {
     var NavBar = (function () {
         function NavBar() {
         }
-        NavBar.annotations = function () {
-            return [new _aureliaFramework.Property('router')];
-        };
+        NavBar.metadata = auf.Behavior.withProperty("router");
         return NavBar;
     })();
     exports.NavBar = NavBar;

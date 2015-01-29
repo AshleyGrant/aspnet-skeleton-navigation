@@ -95,6 +95,7 @@
     <Content Include="styles\styles.css" />
     <Content Include="Web.config" />
     <TypeScriptCompile Include="typings\aurelia\aurelia.d.ts" />
+    <TypeScriptCompile Include="typings\es6-promise\es6-promise.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

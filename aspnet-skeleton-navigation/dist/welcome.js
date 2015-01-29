@@ -1,9 +1,9 @@
 define(["require", "exports"], function (require, exports) {
     var Welcome = (function () {
         function Welcome() {
-            this.heading = 'Welcome to the Aurelia Navigation App (VS/TS)!';
-            this.firstName = 'John';
-            this.lastName = 'Doe';
+            this.heading = "Welcome to the Aurelia Navigation App (VS/TS)!";
+            this.firstName = "John";
+            this.lastName = "Doe";
         }
         Object.defineProperty(Welcome.prototype, "fullName", {
             get: function () {
