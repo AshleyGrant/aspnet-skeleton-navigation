@@ -14,7 +14,10 @@ module.exports = function(config) {
 
     jspm: {
       // Edit this to your needs
-      loadFiles: ['src/**/*.js', 'test/**/*.js']
+      loadFiles: ['src/**/*.js', 'test/unit/**/*.js'],
+      paths: {
+        '*': '*.js'
+      }
     },
 
 
@@ -30,14 +33,18 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'test/**/*.js': ['6to5'],
-      'src/**/*.js': ['6to5']
+      'test/**/*.js': ['babel'],
+      'src/**/*.js': ['babel']
     },
-    '6to5Preprocessor': {
+    'babelPreprocessor': {
       options: {
         sourceMap: 'inline',
         modules: 'system',
-        moduleIds: false
+        moduleIds: false,
+        optional: [
+          "es7.decorators",
+          "es7.classProperties"
+        ]
       }
     },
 

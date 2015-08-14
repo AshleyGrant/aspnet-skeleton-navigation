@@ -1,0 +1,6 @@
+C:\Users\Ashley\github\ashleygrant\aspnet-skeleton-navigation\aspnet-skeleton-navigation\bin\aspnet-skeleton-navigation.dll.config
+C:\Users\Ashley\github\ashleygrant\aspnet-skeleton-navigation\aspnet-skeleton-navigation\bin\aspnet-skeleton-navigation.dll
+C:\Users\Ashley\github\ashleygrant\aspnet-skeleton-navigation\aspnet-skeleton-navigation\bin\aspnet-skeleton-navigation.pdb
+C:\Users\Ashley\github\ashleygrant\aspnet-skeleton-navigation\aspnet-skeleton-navigation\obj\Debug\aspnet-skeleton-navigation.csprojResolveAssemblyReference.cache
+C:\Users\Ashley\github\ashleygrant\aspnet-skeleton-navigation\aspnet-skeleton-navigation\obj\Debug\aspnet-skeleton-navigation.dll
+C:\Users\Ashley\github\ashleygrant\aspnet-skeleton-navigation\aspnet-skeleton-navigation\obj\Debug\aspnet-skeleton-navigation.pdb

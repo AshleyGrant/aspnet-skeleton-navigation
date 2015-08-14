@@ -64,11 +64,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".editorconfig" />
+    <Content Include=".jshintrc" />
     <Content Include=".npmignore" />
+    <Content Include="CONTRIBUTING.md" />
     <Content Include="doc\api.json" />
     <Content Include="doc\CHANGELOG.md" />
+    <Content Include="jsconfig.json" />
     <Content Include="LICENSE" />
     <Content Include="package.json" />
+    <Content Include="README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -78,24 +82,49 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="aurelia.protractor.js" />
+    <Content Include="build\args.js" />
+    <Content Include="build\babel-options.js" />
+    <Content Include="build\paths.js" />
+    <Content Include="build\tasks\build.js" />
+    <Content Include="build\tasks\clean.js" />
+    <Content Include="build\tasks\dev.js" />
+    <Content Include="build\tasks\doc.js" />
+    <Content Include="build\tasks\e2e.js" />
+    <Content Include="build\tasks\lint.js" />
+    <Content Include="build\tasks\prepare-release.js" />
+    <Content Include="build\tasks\serve.js" />
+    <Content Include="build\tasks\test.js" />
+    <Content Include="build\tasks\watch.js" />
     <Content Include="config.js" />
+    <Content Include="favicon.ico" />
     <Content Include="gulpfile.js" />
     <Content Include="index.html" />
     <Content Include="karma.conf.js" />
+    <Content Include="protractor.conf.js" />
     <Content Include="src\app.html" />
-    <TypeScriptCompile Include="src\app.ts" />
+    <Content Include="src\app.js" />
+    <Content Include="src\blur-image.js" />
     <Content Include="src\child-router.html" />
-    <TypeScriptCompile Include="src\child-router.ts" />
-    <Content Include="src\flickr.html" />
-    <TypeScriptCompile Include="src\flickr.ts" />
+    <Content Include="src\child-router.js" />
+    <Content Include="src\main.js" />
     <Content Include="src\nav-bar.html" />
-    <TypeScriptCompile Include="src\nav-bar.ts" />
+    <Content Include="src\nav-bar.js" />
+    <Content Include="src\users.html" />
+    <Content Include="src\users.js" />
     <Content Include="src\welcome.html" />
-    <TypeScriptCompile Include="src\welcome.ts" />
+    <Content Include="src\welcome.js" />
     <Content Include="styles\styles.css" />
+    <Content Include="test\e2e\dist\demo.spec.js" />
+    <Content Include="test\e2e\dist\skeleton.po.js" />
+    <Content Include="test\e2e\dist\welcome.po.js" />
+    <Content Include="test\e2e\src\demo.spec.js" />
+    <Content Include="test\e2e\src\skeleton.po.js" />
+    <Content Include="test\e2e\src\welcome.po.js" />
+    <Content Include="test\unit\app.spec.js" />
+    <Content Include="test\unit\child-router.spec.js" />
+    <Content Include="test\unit\flickr.spec.js" />
     <Content Include="Web.config" />
-    <TypeScriptCompile Include="typings\aurelia\aurelia.d.ts" />
-    <TypeScriptCompile Include="typings\es6-promise\es6-promise.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

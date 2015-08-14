@@ -2,10 +2,10 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <NpmFile>$(MSBuildProjectDirectory)\package.json</NpmFile>
-    <NpmCommand>install --loglevel error</NpmCommand>
+    <NpmCommand>install</NpmCommand>
   </PropertyGroup>
   <PropertyGroup Condition="'$(VisualStudioVersion)' == '12.0'">
-    <NpmCommand>install --loglevel error --msvs-version=2013</NpmCommand>
+    <NpmCommand>install --msvs-version=2013</NpmCommand>
   </PropertyGroup>
   <!-- vim: set ft=xml sw=4 :-->
 </Project>
